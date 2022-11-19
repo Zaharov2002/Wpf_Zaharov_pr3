@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:Wpf_Zaharov_pr3"
         mc:Ignorable="d"
         Title="Window5" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Style.Setters>
+                <Setter Property="Margin" Value="5"/>
+                <EventSetter Event="Click" Handler="Button_Click"/>
+            </Style.Setters>
+        </Style>
+    </Window.Resources>
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+        <Button>Открыть</Button>
+        <Button>Обработать</Button>
+        <Button>Сохранить</Button>
+    </StackPanel>
+    
 </Window>
